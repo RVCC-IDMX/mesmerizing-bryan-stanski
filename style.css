@@ -468,3 +468,26 @@ body {
   }
 }
 /* # Mesmerizing by xposedbones */
+
+/* Reduce Motion query */
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --anispeed: 60s;
+  }
+}
+
+/* Prefer Color Scheme : Dark query */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: rgb(61, 61, 61);
+  }
+  .holder .circle:nth-child(1) {
+    background-color: white;
+  }
+  .holder .circle:nth-child(n + 2) {
+    border: 13px solid white;
+    border-bottom: none;
+  }
+}
